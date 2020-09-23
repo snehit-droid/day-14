@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <script>
+        var container = document.createElement('div');
+        container.id = 'cont';
+        container.classList.add('container');
+        
+        var box_1 = document.createElement('div');
+        box_1.id = 'box_1';
+        box_1.classList.add('box-1');
+
+        var row_1 = document.createElement('div');
+        row_1.id = 'row_1';
+        row_1.classList.add('row','mt-2');
+
+        var col_1_1 = document.createElement('div');
+        col_1_1.classList.add('col-3');
+
+        var screen_1 = document.createElement('div');
+        screen_1.id = 'screen_1';
+        screen_1.classList.add('col-6');
+
+        var head_1 = document.createElement("p");
+        head_1.innerText = "Unique eight Digit Random Number"
+
+        var view_1 = document.createElement("p");
+        view_1.id = "output_1";
+
+        screen_1.append(head_1, view_1);
+
+        var col_1_2 = document.createElement('div');
+        col_1_2.classList.add('col-3');
+
+        row_1.append(col_1_1, screen_1, col_1_2);
+
+        var row_1_2 = document.createElement('div');
+        row_1_2.id = 'row_1_2';
+        row_1_2.classList.add('row');
+
+        var btn_1 = document.createElement("BUTTON");
+        btn_1.id = 'btn_1';
+        var txt_1 = document.createTextNode("Click");
+        btn_1.appendChild(txt_1);
+        btn_1.classList.add('btn','btn-info','buttons');
+
+        row_1_2.appendChild(btn_1);
+        
+        box_1.append(row_1, row_1_2);
+
+        var box_2 = document.createElement('div');
+        box_2.id = 'box_2';
+        box_2.classList.add('box-2');
+
+        var row_2 = document.createElement('div');
+        row_2.id = 'row_2';
+        row_2.classList.add('row','mt-3');
+
+        var col_2_1 = document.createElement('div');
+        col_2_1.classList.add('col-3');
+
+        var screen_2 = document.createElement('div');
+        screen_2.id = 'screen_2'
+        screen_2.classList.add('col-6');
+
+        var head_2 = document.createElement("p");
+        head_2.innerText = "Date Manipulation in DOM"
+
+        var x = document.createElement("INPUT");
+        x.setAttribute("type", "date");
+        x.id = 'input_date';
+        x.setAttribute('value', "2014-02-09");
+
+        var view_2 = document.createElement("p");
+        view_2.id = "output_2";
+
+        screen_2.append(head_2, x, view_2);
+
+        var col_2_2 = document.createElement('div');
+        col_2_2.classList.add('col-3');
+
+        row_2.append(col_2_1, screen_2, col_2_2);
+
+        var row_2_2 = document.createElement('div');
+        row_2_2.id = 'row_2_2';
+        row_2_2.classList.add('row');
+
+        var btn_2 = document.createElement("BUTTON");
+        btn_2.id = 'btn_2';
+        var txt_2 = document.createTextNode("Click");
+        btn_2.appendChild(txt_2);
+        btn_2.classList.add('btn','btn-success','buttons');
+
+        row_2_2.appendChild(btn_2);
+        
+        box_2.append(row_2, row_2_2);
+        
+        container.append(box_1, box_2);
+
+        document.body.append(container); 
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+#screen_1{
+	text-align: center;
+    height: 200px;
+    color: rgb(85, 1, 12);
+    margin: 10px auto;
+	padding-top: 20px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bolder;
+    font-family: cursive;
+    background-color: #919191;
+    position: relative;
+}
+#screen_2{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(85, 1, 12);
+	height: 300px;
+    margin: 10px auto;
+    margin-top: 30px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bolder;
+    font-family: cursive;
+    background-color: #919191;
+    position: relative;
+}
+.buttons{
+    position: absolute;
+    left: 500px;
+}
+#input_tag{
+    margin: 5px auto;
+    width: inherit;
+}
